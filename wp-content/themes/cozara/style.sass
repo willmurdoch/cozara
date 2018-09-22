@@ -111,10 +111,19 @@ footer#mainFooter
 .footerBlock
   position: absolute
   bottom: 0
+  background: url(images/footerTile.png) bottom left repeat-x
+  height: 44px
+  padding: 0 20px
+  &:after
+    +pseudoStart
+    width: 30px
+    height: 44px
+    top: 0
   p, a
     font-size: 10px
     text-transform: uppercase
     font-weight: bold
+    line-height: 52px
   p
     display: inline-block
     vertical-align: middle
